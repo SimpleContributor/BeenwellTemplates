@@ -1,7 +1,8 @@
 # BeenwellTemplates
 Code template forms for Beenwell RP
 
-Work Uniform Template  
+Work Uniform Template 
+<pre>
 [2] = {  
     outfitLabel = 'Polo',  
     outfitData = {  
@@ -20,5 +21,6 @@ Work Uniform Template
         ['ear'] = {item = 0, texture = 0, defaultItem = 0, defaultTexture = 0}, -- Ear accessories  
     }  
 },
+</pre>
 
 

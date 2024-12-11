@@ -115,7 +115,7 @@ Only need name and loc
 },
 </pre>
 
-### Job Outfits
+### Outfit/Uniform Changers
 
 Outfit Changer - Choose between any saved outfits
 
@@ -141,7 +141,7 @@ coords = vector3(1555.02, 800.12, 77.04)
 
 ### Spawner Garage for Jobs
 
-General spawner code for job based garages i.e. police, ambulance.
+General spawner code for job based garages i.e. police, ambulance.  
 Helicoptor spawn:
 
 <pre>
@@ -360,7 +360,7 @@ Owned car storage garage
 
 ### Vehicle Categories
 
-This is the dealership config in it's entirety. Use boss menu etc. for other configs needed
+This is the dealership config in it's entirety. Use boss menu etc. for other configs needed  
 Uses Turbo Wheels as the example
 
 <pre>
@@ -638,7 +638,8 @@ There is quite a bit that goes into crafting, so I'll do my best to explain
 
 ### Items Used to Craft
 
-These are all of the items that are used on the benches. I need to add photos, so any new items must be clearly seen. Marking a new item with a date is best. i.e. -- 12/10/24
+These are all of the items that are used on the benches.  
+I need to add photos, so any new items must be clearly seen. Marking a new item with a date is best. i.e. -- 12/10/24
 
 <pre>
 Config.itemNames = { -- Format: id = label | In case the item starts with a number make sure to set it in this format: ['9mm'] = 9mm ammo,
@@ -691,7 +692,7 @@ Config.itemNames = { -- Format: id = label | In case the item starts with a numb
 
 ### Craftable Items
 
-This is how items are configured for crafting
+This is how items are configured for crafting  
 
 Example 1:
 
@@ -775,7 +776,7 @@ Example 3:
 
 ### Bench Locations and Items Crafted
 
-I'll show two seperate examples, one that uses job restrictions and another that's for everyone
+I'll show two seperate examples, one that uses job restrictions and another that's for everyone  
 For crafts it uses the names of items above
 
 Example 1:

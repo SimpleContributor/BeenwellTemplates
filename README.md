@@ -832,3 +832,48 @@ Example 2:
     },
 },
 </pre>
+
+## ADMIN MENU
+### Perms/roles
+Permissions are set through discord roles. Just say which role should have which level of power, i.e. god, admin, etc. Can be any name we want.
+
+<pre>
+UserGroups = {
+    enabled = true,           -- Enable usergroups from framework (Esx/QBCore), example/common groups below by default.
+    groups = {
+        -- Customize and add more like example of 'mod'
+        ['coordsOnly'] = {
+            teleport = true,
+        },
+        ['cia'] = {
+            ban = true,
+            kick = true,
+            teleport = true,
+            heal = true,
+            revive = true,
+        },
+        ['meninblack'] = {           -- Group name
+            ban = true,         -- Ability to ban
+            kick = true,        -- Ability to kick
+            teleport = true,    -- Ability to bring/goto players
+            zones = true,       -- Ability to utilize the zones system
+            -- money = true,       -- Ability to give money
+            -- items = true,       -- Ability to give items
+            vehicles = true,    -- Ability to use vehicle functions
+            revive = true,      -- Ability to revive others and themselves
+            heal = true,        -- Ability to heal others and themselves
+            skin = true,        -- Ability to open skin menu and give it to others
+            invisible = true,   -- Ability to toggle invisibility
+            godmode = true,     -- Ability to toggle god mode
+            setped = true,      -- Ability to set peds in the menu
+            noclip = true,      -- Ability to use no clip functions
+            inventory = true,   -- Access / clear inventories
+            spectate = true,    -- Ability to spectate via player options,
+            playerBlips = true, -- Ability to enable player blips in server management section
+        },
+        ['god'] = {
+            allPerms = true, -- allPerms can be defined to grant all perms at once
+        },
+    }
+},
+</pre>

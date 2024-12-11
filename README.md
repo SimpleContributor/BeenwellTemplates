@@ -115,7 +115,7 @@ Only need name and loc
 },
 </pre>
 
-### Job Outfits
+### Outfit/Uniform Changers
 
 Outfit Changer - Choose between any saved outfits
 

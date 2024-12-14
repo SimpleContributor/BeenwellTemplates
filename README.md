@@ -880,10 +880,12 @@ UserGroups = {
 </pre>
 
 ## NPC GUARDS
-### This example is currently set up to have guards at the PB mansion
+### Stationary and Patrol (Walking and Driving)
+This example can be seen at PB Mansion. 
 <pre>
 ['lostmc'] = {
         name = "lostmc",
+        -- Zone NPCs will guard. Giant circle area similar to green zones
         zone = {
             enabled = false,
             position = vector4(4498.89, -4503.84, 4.18, 154.39),

@@ -878,3 +878,105 @@ UserGroups = {
     }
 },
 </pre>
+
+## NPC GUARDS
+### This example is currently set up to have guards at the PB mansion
+<pre>
+['lostmc'] = {
+        name = "lostmc",
+        zone = {
+            enabled = false,
+            position = vector4(4498.89, -4503.84, 4.18, 154.39),
+            radius = 10,
+        },
+        guards = {
+            stationary = {
+                {
+                    position = vector4(-1541.33, 128.97, 56.78, 134.55),
+                    model = "s_m_m_armoured_01", 
+                    weapon = "weapon_carbinerifle",
+                    weapon_hidden = true, -- if true the weapon wont be shown
+                    ammo = 100,
+                },
+                {
+                    position = vector4(-1569.45, 116.76, 59.18, 47.17),
+                    model = "s_m_m_armoured_01",
+                    weapon = "WEAPON_ASSAULTRIFLE",
+                    weapon_hidden = true, -- if true the weapon wont be shown
+                    ammo = 150,
+                },
+                {
+                    position = vector4(-1579.47, 150.38, 58.7, 205.36),
+                    model = "s_m_m_armoured_01",
+                    weapon = "WEAPON_ASSAULTRIFLE",
+                    weapon_hidden = false, -- if true the weapon wont be shown
+                    ammo = 150,
+                },
+                {
+                    position = vector4(-1536.68, 156.82, 60.61, 0.12),
+                    model = "s_m_m_armoured_01",
+                    weapon = "WEAPON_SNIPERRIFLE",
+                    weapon_hidden = false, -- if true the weapon wont be shown
+                    ammo = 150,
+                },
+                -- add more guards if needed
+            },
+            patrolling = {
+                {
+                     route = {
+                            vector4(-1568.7, 116.42, 59.18, 132.41),
+                            vector4(-1597.41, 85.62, 60.81, 145.28),
+                            vector4(-1596.71, 72.4, 60.81, 204.78),
+                            vector4(-1579.46, 70.89, 60.81, 313.3),
+                            vector4(-1551.92, 99.99, 59.18, 316.77)
+                         },
+                         model = "a_f_m_salton_01",
+                         weapon = "WEAPON_CARBINERIFLE",
+                         weapon_hidden = false, -- if true the weapon wont be shown
+                         ammo = 200,
+                         behavior = "walking" -- walking or running
+                 },
+                 {
+                    route = {
+                        vector4(-1514.19, 153.83, 55.65, 321.37),
+                        vector4(-1501.81, 154.06, 55.65, 243.48),
+                        vector4(-1497.16, 140.71, 55.65, 230.55),
+                        vector4(-1474.58, 137.24, 55.65, 269.43),
+                        vector4(-1472.76, 118.41, 55.65, 184.57)
+                        },
+                        model = "s_m_y_swat_01",
+                        weapon = "WEAPON_CARBINERIFLE",
+                        weapon_hidden = false, -- if true the weapon wont be shown
+                        ammo = 200,
+                        behavior = "walking" -- 'walking' or 'running'
+                },
+                -- add more guards if needed
+            },
+            carPatrol = {
+                {
+                    carModel = "baller5",
+                    route = {
+                        vector4(-1480.43, 55.38, 53.65, 107.24),
+                        vector4(-1529.79, 46.93, 56.61, 98.46),
+                        vector4(-1583.48, 52.23, 59.66, 68.26),
+                        vector4(-1640.85, 81.79, 62.61, 57.03),
+                        vector4(-1678.71, 106.85, 64.08, 348.89),
+                        vector4(-1656.09, 129.55, 63.35, 305.78),
+                        vector4(-1534.58, 187.0, 57.27, 296.9),
+                        vector4(-1495.62, 221.14, 60.59, 318.87),
+                        vector4(-1459.17, 261.33, 61.6, 319.77),
+                        vector4(-1425.45, 243.75, 59.06, 233.37),
+                        vector4(-1403.16, 207.0, 59.06, 189.72),
+                        vector4(-1438.31, 134.1, 52.33, 168.95),
+                        vector4(-1443.36, 63.52, 52.33, 120.32)
+                    },
+                    pedModel = "s_m_y_swat_01",
+                    weapon = "WEAPON_PISTOL",
+                    behavior = 786468,
+                    speed = 5.0
+            },
+            -- add more guards if needed
+        }
+    }
+}
+</pre>

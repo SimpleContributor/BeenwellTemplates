@@ -1223,7 +1223,34 @@ Config.PenalCode = {
 
 
 # SICCO CAR PACK
+## Here are the categories  
+### compacts
+### sedans
+### suvs
+### coupes
+### muscle
+### sportsclassics
+### sports
+## MOTORCYCLES REQUIRE type = 'bike' NOT type = 'automobile'
+### motorcycles
+### offroad
+### industrial
+### utility
+### vans
+### sports
+### emergency
+### military
+### commercial
 
+## Dealership names
+### Heavy D Motorsports
+### Paleto Motorcycles
+### Premium Deluxe Motorsports
+### Turbo Wheels
+### Sandy Shores Trailers
+### truck
+
+## Change the name, price, category and shop
 <pre>
     --------------------------------------
     --------------------------------------

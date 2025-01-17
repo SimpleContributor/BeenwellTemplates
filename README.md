@@ -1250,7 +1250,7 @@ Config.PenalCode = {
 ### Sandy Shores Trailers
 ### truck
 
-## Change the name, price, category and shop
+## Change the name, price, category and shop (and type if catagory = 'motorcycle', change type = 'bike')
 <pre>
     --------------------------------------
     --------------------------------------

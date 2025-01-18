@@ -3,14 +3,15 @@
 ## Code template forms for Beenwell RP
 
 ### PLACEABLE ITEMS
--- All placeable items with the amounts and props defined  
--- https://gta-objects.xyz/objects  
--- the value between the square brackets [] is the item name. Feel free to add as many as you want  
--- temporary - whether the item should be temporary (not persistent). When `false` or unset the item will be persistent  
--- canBeThrown - whether the item should be throwable  
--- canBeDropped - whether the item should be droppable  
--- force3dTextPickup - whether to force the item to use a 3d text pickup method, even when target is enabled. Useful for tiny props or props without collisions  
--- sizes - table containing all the item models per sizes. The key (value between the square brackets [] is the amount)  
+All placeable items with the amounts and props defined
+https://gta-objects.xyz/objects
+the value between the square brackets [] is the item name. Feel free to add as many as you want
+temporary - whether the item should be temporary (not persistent). When `false` or unset the item will be persistent
+canBeThrown - whether the item should be throwable
+canBeDropped - whether the item should be droppable
+force3dTextPickup - whether to force the item to use a 3d text pickup method, even when target is enabled. Useful for tiny props or props without collisions
+sizes - table containing all the item models per sizes. The key (value between the square brackets [] is the amount)
+<pre>
 Config.items = {
     ['gold'] = {
         canBeThrown = true,
@@ -53,7 +54,8 @@ Config.items = {
             [6] = 'bkr_prop_meth_bigbag_01a',
         }
     },
-}
+} 
+</pre>
 
 ### Boss Menu
 

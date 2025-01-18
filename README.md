@@ -2,6 +2,59 @@
 
 ## Code template forms for Beenwell RP
 
+### PLACEABLE ITEMS
+-- All placeable items with the amounts and props defined
+-- https://gta-objects.xyz/objects
+-- the value between the square brackets [] is the item name. Feel free to add as many as you want
+-- temporary - whether the item should be temporary (not persistent). When `false` or unset the item will be persistent
+-- canBeThrown - whether the item should be throwable
+-- canBeDropped - whether the item should be droppable
+-- force3dTextPickup - whether to force the item to use a 3d text pickup method, even when target is enabled. Useful for tiny props or props without collisions
+-- sizes - table containing all the item models per sizes. The key (value between the square brackets [] is the amount)
+Config.items = {
+    ['gold'] = {
+        canBeThrown = true,
+        canBeDropped = true,
+        force3dTextPickup = true,
+        sizes = {
+            [1] = 'prop_gold_bar',
+            [6] = 'prop_ld_gold_chest',
+        }
+    },
+    ['traffic_cone'] = {
+        temporary = true,
+        canBeThrown = true,
+        canBeDropped = true,
+        sizes = {
+            [1] = 'prop_mp_cone_02',
+        }
+    },
+    ['medicbag'] = {
+        canBeThrown = true,
+        canBeDropped = true,
+        sizes = {
+            [1] = 'xm_prop_x17_bag_med_01a',
+        }
+    },
+    ['coke'] = {
+        canBeThrown = true,
+        canBeDropped = true,
+        sizes = {
+            [1] = 'hei_prop_hei_drug_pack_01a',
+            [5] = 'hei_prop_hei_drug_pack_01b',
+        }
+    },
+    ['meth'] = {
+        canBeThrown = true,
+        canBeDropped = true,
+        sizes = {
+            [1] = 'bkr_prop_meth_smallbag_01a',
+            [4] = 'bkr_prop_meth_bigbag_04a',
+            [6] = 'bkr_prop_meth_bigbag_01a',
+        }
+    },
+}
+
 ### Boss Menu
 
 Uses the job name, and takes vec3 for the boss menu and the duty menu.

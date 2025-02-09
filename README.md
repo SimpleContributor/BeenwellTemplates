@@ -753,27 +753,27 @@ Example 1:
 
 <pre>
 ['rifle-ak'] = {
-    item = 'weapon_assaultrifle', -- Item id and name of the image
-    amount = 1, -- Amount of the item the player will receive
-    maxCraft = 1, -- Max amount of crafts at a time
-    successCraftPercentage = 75, -- Percentage of successful craft 0 = 0% | 50 = 50% | 100 = 100%
-    isItem = true, -- if true = is item | if false = is weapon
-    isDisassemble = false, -- true = disassemble | false = craft
-    time = 6, -- Time to craft (in seconds)
-    levelNeeded = 2, -- What level he needs to craft this item
-    xpPerCraft = 40, -- How much XP he receives after crafting this item
-    recipe = { -- Recipe to craft it
-    {'steel', 125, true, false}, -- item/amount/if the item should be removed when crafting/if it's money
+    item = 'weapon_assaultrifle',                   -- Item id and name of the image
+    amount = 1,                                     -- Amount of the item the player will receive
+    maxCraft = 1,                                   -- Max amount of crafts at a time
+    successCraftPercentage = 75,                    -- Percentage of successful craft 0 = 0% | 50 = 50% | 100 = 100%
+    isItem = true,                                  -- if true = is item | if false = is weapon
+    isDisassemble = false,                          -- true = disassemble | false = craft
+    time = 6,                                       -- Time to craft (in seconds)
+    levelNeeded = 2,                                -- What level he needs to craft this item
+    xpPerCraft = 40,                                -- How much XP he receives after crafting this item
+    recipe = {                                      -- Recipe to craft it
+    {'steel', 125, true, false},                    -- item/amount/if the item should be removed when crafting/if it's money
     {'aluminum', 125, true, false},
     {'rubber', 25, true, false},
     {'plastic', 25, true, false},
     {'assault_rifle_blueprint', 1, false, false}
     },
-    job = { -- What jobs can craft this item in this workbench
+    job = {                                         -- What jobs can craft this item in this workbench
         ''
     },
-    data = {}, -- Used to pass additional data, such as metadata
-    category = 'Ranged Weapons', -- Used as ID and Name of the category
+    data = {},                                      -- Used to pass additional data, such as metadata
+    category = 'Ranged Weapons',                    -- Used as ID and Name of the category
 },
 </pre>
 
@@ -781,26 +781,26 @@ Example 2:
 
 <pre>
 ['switchblade'] = {
-    item = 'weapon_switchblade', -- Item id and name of the image
-    amount = 1, -- Amount of the item the player will receive
-    maxCraft = 1, -- Max amount of crafts at a time
-    successCraftPercentage = 75, -- Percentage of successful craft 0 = 0% | 50 = 50% | 100 = 100%
-    isItem = false, -- if true = is item | if false = is weapon
-    isDisassemble = false, -- true = disassemble | false = craft
-    time = 15, -- Time to craft (in seconds)
-    levelNeeded = 1, -- What level he needs to craft this item
-    xpPerCraft = 40, -- How much XP he receives after crafting this item
-    recipe = { -- Recipe to craft it
-    {'steel', 25, true, false}, -- item/amount/if the item should be removed when crafting/if it's money
-    {'aluminum', 25, true, false},
-    {'rubber', 10, true, false},
-    {'plastic', 15, true, false},
+    item = 'weapon_switchblade',                   -- Item id and name of the image
+    amount = 1,                                    -- Amount of the item the player will receive
+    maxCraft = 1,                                  -- Max amount of crafts at a time
+    successCraftPercentage = 75,                   -- Percentage of successful craft 0 = 0% | 50 = 50% | 100 = 100%
+    isItem = false,                                -- if true = is item | if false = is weapon
+    isDisassemble = false,                         -- true = disassemble | false = craft
+    time = 15,                                     -- Time to craft (in seconds)
+    levelNeeded = 1,                               -- What level he needs to craft this item
+    xpPerCraft = 40,                               -- How much XP he receives after crafting this item
+    recipe = {                                     -- Recipe to craft it
+        {'steel', 25, true, false},                -- item/amount/if the item should be removed when crafting/if it's money
+        {'aluminum', 25, true, false},
+        {'rubber', 10, true, false},
+        {'plastic', 15, true, false},
     },
-    job = { -- What jobs can craft this item in this workbench
+    job = {                                        -- What jobs can craft this item in this workbench
         ''
     },
-    data = {}, -- Used to pass additional data, such as metadata
-    category = 'Melee Weapons', -- Used as ID and Name of the category
+    data = {},                                     -- Used to pass additional data, such as metadata
+    category = 'Melee Weapons',                    -- Used as ID and Name of the category
 },
 </pre>
 
@@ -808,24 +808,24 @@ Example 3:
 
 <pre>
 ['9mm ammo'] = {
-    item = 'ammo-9', -- Item id and name of the image
-    amount = 10, -- Amount of the item the player will receive
-    maxCraft = 1, -- Max amount of crafts at a time
-    successCraftPercentage = 75, -- Percentage of successful craft 0 = 0% | 50 = 50% | 100 = 100%
-    isItem = true, -- if true = is item | if false = is weapon
-    isDisassemble = false, -- true = disassemble | false = craft
-    time = 3, -- Time to craft (in seconds)
-    levelNeeded = 1, -- What level he needs to craft this item
-    xpPerCraft = 40, -- How much XP he receives after crafting this item
-    recipe = { -- Recipe to craft it
-        {'iron', 2, true, false}, -- item/amount/if the item should be removed when crafting/if it's money
+    item = 'ammo-9',                               -- Item id and name of the image
+    amount = 10,                                   -- Amount of the item the player will receive
+    maxCraft = 1,                                  -- Max amount of crafts at a time
+    successCraftPercentage = 75,                   -- Percentage of successful craft 0 = 0% | 50 = 50% | 100 = 100%
+    isItem = true,                                 -- if true = is item | if false = is weapon
+    isDisassemble = false,                         -- true = disassemble | false = craft
+    time = 3,                                      -- Time to craft (in seconds)
+    levelNeeded = 1,                               -- What level he needs to craft this item
+    xpPerCraft = 40,                               -- How much XP he receives after crafting this item
+    recipe = {                                     -- Recipe to craft it
+        {'iron', 2, true, false},                  -- item/amount/if the item should be removed when crafting/if it's money
         {'money', 1, true, true},
     },
-    job = { -- What jobs can craft this item in this workbench
+    job = {                                        -- What jobs can craft this item in this workbench
         ''
     },
-    data = {}, -- Used to pass additional data, such as metadata
-    category = 'Ammo', -- Used as ID and Name of the category
+    data = {},                                     -- Used to pass additional data, such as metadata
+    category = 'Ammo',                             -- Used as ID and Name of the category
 },
 </pre>
 
